@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <section class="text">
+        <div class="calculator">
+            <div class="additional-key">
+                <button class="additional-key-chenge-mod" id="proMod">Pro mod</button>            
+            </div>    
+            <div class="input-wrapper">
+                <!-- <div id="history" type="text" class="history-screen"></div> -->
+                <input id="result" type="text" class="result-screen" value="0">
+            </div>
+            <div class="additional-keyboard-row" id="addKeyRow">
+                <button id="e" class="key operation bg-red-fill white-text border-red-fill">е</button>
+                <button id="pi" class="key operation bg-red-fill white-text border-red-fill">π</button>
+                <button class="key operation bg-red-fill white-text border-red-fill">|х|</button>
+                <button id="invert" class="key operation bg-red-fill white-text border-red-fill">±</button>
+            </div>
+            <div class="keyboard">                
+               <div class="keyboard-row">
+                   <button id="sqrt" class="key operation bg-white-fill red-border red-text">√x</button>
+                   <button id="sqr" class="key operation bg-white-fill red-border red-text">x<sup>2</sup></button>
+                   <button class="key bg-white-turqoise-fill turquoise-border turquoise-text" id="c">С</button>
+                   <button class="key bg-turquoise-fill white-text border-turquoise-fill" id="ce">⌫</button>
+               </div>
+               <div class="keyboard-row">
+                   <button id="num7" class="key number">7</button>
+                   <button id="num8" class="key number">8</button>
+                   <button id="num9" class="key number">9</button>
+                   <button class="key operation bg-red-fill white-text border-red-fill" id="division">÷</button>
+               </div>
+               <div class="keyboard-row">
+                   <button id="num4"class="key number">4</button>
+                   <button id="num5"class="key number">5</button>
+                   <button id="num6"class="key number">6</button>
+                   <button class="key operation bg-red-fill white-text border-red-fill" id="multiplay">×</button>
+               </div>
+               <div class="keyboard-row">
+                   <button id="num1" class="key number">1</button>
+                   <button id="num2" class="key number">2</button>
+                   <button id="num3" class="key number" value="3">3</button>
+                   <button class="key bg-red-fill white-text border-red-fill" id="sub">-</button>
+               </div>
+               <div class="keyboard-row">
+                   <button class="key" id="dot">.</button>
+                   <button id="num0" class="key number">0</button>
+                   <button class="key bg-blue-fill white-text border-blue-fill" id="calculate">=</button>
+                   <button class="key bg-red-fill white-text border-red-fill" id="add">+</button>
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="dom.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
