@@ -1,0 +1,50 @@
+* {
+      padding: 0;
+      margin: 0;
+}
+
+.main {
+      height: 100vh;
+      background-image: url(/img/baraban8.jpg);
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.buttons {
+      width: 900px;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      border-radius: 15px;
+}
+
+.button {
+      border: 3px solid rgb(0, 0, 0);
+      background-color: rgba($color: #fff9be, $alpha: 0.3);
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      color: white;
+      font-size: 2.5rem;
+      overflow: hidden;
+      outline: none;
+}
+.button:active {
+      border: 3px solid rgb(255, 232, 55);
+      filter: drop-shadow(0 0 2rem crimson);
+    }
+.active {
+      border: 3px solid rgb(255, 232, 55);
+      filter: drop-shadow(0 0 2rem crimson);
+}
+.description {
+      height: 20px;
+}
+.description-text {
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: #fff4a2;
+}
+
+
