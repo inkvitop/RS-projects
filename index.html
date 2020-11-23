@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Woah! CSS Variables!</title>
+</head>
+<body>
+      <main class="main">
+            <div class="options">
+                  <h1 class="options-h1">Фотофильтры</h1>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Цвет фона:</p></div>
+                        <!-- <div class="color-picker"></div> -->
+                        <input class="options-block-input" type="color" name="bg-color" id="inp-color-picker" value="#ffffff">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Размер фото:</p></div>
+                        <input class="options-block-input" type="range" min="20" max="100" name="photo-size" id="photo-size" data-sizing="%" value="100">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Размытие:</p></div>
+                        <input class="options-block-input" type="range" min="0" max="10" name="photo-blur" id="blur" data-sizing="px" value="0">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Насыщенность:</p></div>
+                        <input class="options-block-input" type="range" min="0" max="100" name="photo-saturation" id="saturation" data-sizing="%" value="100">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Инверсия:</p></div>
+                        <input class="options-block-input" type="range" min="0" max="100" name="photo-inversion" id="inversion" data-sizing="%" value="0">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Сепия:</p></div>
+                        <input class="options-block-input" type="range" min="0" max="100" name="photo-sepia" id="sepia" data-sizing="%">
+                  </div>
+                  <div class="options-block">
+                        <div class="options-block-text"><p>Оттенок:</p></div>
+                        <input class="options-block-input" type="range" min="0" max="360" name="photo-tone" id="tone" data-sizing="deg" value="0">
+                  </div>
+            </div>
+            <div class="photos">
+                  <div class="photos-blur">
+                        <div class="photos-inversion">
+                              <div class="photos-sepia">
+                                    <img class="photos-photo" src="img/kompoziciya_v-peizajnoy-fotografii.jpg" alt="main-photo">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </main>
+
+<script src="main.js"></script>
+</body>
+</html>
