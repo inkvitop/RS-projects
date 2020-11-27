@@ -1,0 +1,146 @@
+/* стили основного контейнера слайдера */
+.slider {
+
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+    /* стили для обёртки, в которой заключены слайды */
+    &__wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 595px;
+    }
+
+    /* стили для контейнера слайдов */
+    &__items {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    /* стили для слайдов */
+    &__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    /* стили для кнопок "вперед" и "назад" */
+    &__control {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__control_prev {
+      left: 40px;
+    } 
+
+    &__control_next {
+      right: 40px;
+    }
+
+    &__control::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 27px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    &__control_prev::before {
+      background-image: url("/images/arrow-left.png");
+    }
+    &__control_next::before {
+      background-image: url("/images/arrow-right.png");
+    }
+}
+    .slider a:hover {
+      box-shadow:0px 0px 9px 10px #FFFFFF;
+      background-color: #FFFFFF;
+      
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // .slider__control:hover,
+    // .slider__control:focus {
+    //   color: #fff;
+    //   text-decoration: none;
+    //   outline: 0;
+    //   opacity: 0.9;
+    // }
+    
+    
+    // .slider__control_prev:hover {
+    //   background-image: url("/images/arrow-left-hov.png");
+    // } 
+    
+
+    
+    
+    
+    
+    
+    
+    /* стили для индикаторов */
+    // .slider__indicators {
+    //   position: absolute;
+    //   right: 0;
+    //   bottom: 10px;
+    //   left: 0;
+    //   z-index: 15;
+    //   display: flex;
+    //   justify-content: center;
+    //   padding-left: 0;
+    //   margin: 0 15%;
+    //   list-style: none;
+    // }
+    
+    // .slider__indicators li {
+    //   box-sizing: content-box;
+    //   flex: 0 1 auto;
+    //   width: 30px;
+    //   height: 4px;
+    //   margin-right: 3px;
+    //   margin-left: 3px;
+    //   text-indent: -999px;
+    //   cursor: pointer;
+    //   background-color: rgba(255, 255, 255, 0.5);
+    //   background-clip: padding-box;
+    //   border-top: 10px solid transparent;
+    //   border-bottom: 10px solid transparent;
+    // }
+    
+    // .slider__indicators li.active {
+    //   background-color: #fff;
+    // }
+
+
+    // @media all and (max-width: 1020px){
+        
+    // }
+
+    // @media all and (max-width: 768px){
+
+    // }
+
+    // @media all and (max-width: 374px){
+
+    // }
