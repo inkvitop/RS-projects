@@ -35,23 +35,23 @@
 }
 
 .photo-1 {
-  background-image: url(/img/1.jpg);
+  background-image: url(img/1.jpg);
 }
 
 .photo-2 {
-  background-image: url(/img/2.jpg);
+  background-image: url(img/2.jpg);
 }
 
 .photo-3 {
-  background-image: url(/img/3.jpg);
+  background-image: url(img/3.jpg);
 }
 
 .photo-4 {
-  background-image: url(/img/4.jpeg);
+  background-image: url(img/4.jpeg);
 }
 
 .photo-5 {
-  background-image: url(/img/5.jpeg);
+  background-image: url(img/5.jpeg);
 }
 
 .panel > * {
