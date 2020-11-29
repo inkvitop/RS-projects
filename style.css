@@ -1,0 +1,81 @@
+:root {
+  --bg-color: #ffffff; 
+  --photo-size: 100%;
+  --photo-tone: 0deg;
+  --photo-sepia: 0%;
+  --photo-inversion: 0%;
+  --photo-saturation: 100%;
+  --photo-blur: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  display: flex;
+}
+
+.options {
+  width: 30%;
+  border: solid 2px black;
+  padding: 0 30px 0 30px;
+}
+.options-h1 {
+  font-size: 3rem;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.options-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  height: 30px;
+  font-size: 25px;
+}
+.options-block-text {
+  width: 60%;
+}
+.options-block-input {
+  width: 60%;
+}
+
+.color-picker {
+  height: 30px;
+  width: 120px;
+  border: 3px solid white;
+}
+
+.photos {
+  width: 70%;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  filter: saturate(var(--photo-saturation));
+}
+.photos-blur {
+  filter: blur(var(--photo-blur));
+}
+.photos-inversion {
+  filter: invert(var(--photo-inversion));
+}
+.photos-sepia {
+  filter: sepia(var(--photo-sepia));
+  display: flex;
+  justify-content: center;
+
+}
+.photos-photo {
+  width: var(--photo-size);
+  height: var(--photo-size);
+  filter: hue-rotate(var(--photo-tone));
+}
+
