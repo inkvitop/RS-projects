@@ -1,0 +1,247 @@
+
+
+body{
+    background-color:rgb(233, 236, 239);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: rgb(245, 245, 245);
+    width: 300px;
+    height: 340px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px 10px 30px 10px;  
+    user-select: none;  
+}
+
+.keyboard {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.input-wrapper{    
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.history-screen{
+    background-color: rgb(229, 240, 248);
+    height: 20px;
+    border-bottom: 1px solid gray;
+    font-size: 0.8rem;
+    user-select: none;
+}
+
+.history-screen span {
+    padding-right: 3px;
+    user-select: none;
+    text-align: end;
+}
+
+.result-screen{
+    height: 30px;
+    border: none;
+    pointer-events: none;
+    font-size: 2rem;
+    user-select: none;
+    font-family: monospace;
+    text-align: end;
+}
+
+.keyboard-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-keyboard-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.key{
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    outline: none;
+    transition: background-color .3s;
+    user-select: none;
+}
+
+.additional-key{
+padding: 1px 0 1px 0;
+height: 30px;
+}
+
+.additional-key-chenge-mod{
+    background-color: rgb(255, 255, 110);
+    color: black;
+    width: 60px;
+    height: 20px;
+    font-size: 0.7rem;
+    font: bolder;
+    border: 1px solid black;
+    border-radius: 15px;
+    outline: none;
+    user-select: none;
+    align-items: center;
+    margin: 5px 0 0 120px;
+    
+}
+
+/* Прятать кнопки */
+.additional-keyboard-row{
+    visibility: hidden;
+}
+
+/* Бэкграунд цвет */
+.bg-red-fill{
+    background-color:rgb(220, 53, 69);  
+}
+.bg-blue-fill{
+    background-color: rgb(0, 105, 217);
+}
+.bg-turquoise-fill{
+    background-color: rgb(23, 162, 184);
+}
+
+/* Текст */
+.white-text{
+    color: white;
+}
+.red-text{
+    color:  rgb(220, 53, 69);
+}
+.turquoise-text{
+    color: rgb(23, 162, 184);
+}
+
+/* Границы */
+.red-border{
+    border: 1px solid rgb(220, 53, 69);
+}
+.turquoise-border{
+    border: 1px solid rgb(23, 162, 184);
+}
+.border-red-fill{
+    border: 1px solid rgb(220, 53, 69);
+}
+.border-turquoise-fill{
+    border: 1px solid rgb(23, 162, 184);
+}
+.border-blue-fill{
+    border: 1px solid rgb(0, 105, 217) ;
+}
+
+/* Анимация */
+.key:hover{ 
+    background-color: rgb(235, 235, 235) ;
+    border-color: rgb(153, 153, 153);
+}
+
+/* Берюзовые полые кнопки */
+.bg-white-turqoise-fill:hover {
+    background-color: rgb(218, 246, 250) ;
+}
+.turquoise-border:hover {
+    border-color:  rgb(160, 233, 243);
+}
+
+/* Красные полые кнопки */
+.bg-white-fill:hover{
+    background-color: rgb(247, 230, 231);
+}
+.red-border:hover{
+    border-color: rgb(240, 165, 172);
+}
+
+/* Красные залитые кнопки */
+.bg-red-fill:hover{
+    background-color: rgb(226, 88, 102);
+}
+.border-red-fill:hover{
+    border-color: rgb(226, 88, 102);
+}
+
+/* Синяя залитая кнопка */
+.bg-blue-fill:hover{
+    background-color: rgb(26, 135, 255);
+}
+.border-blue-fill:hover{
+ border-color: rgb(26, 135, 255);
+}
+
+/* Берюзовые залитые кнопки */
+.bg-turquoise-fill:hover{
+    background-color: rgb(32, 203, 227);
+}
+.border-turquoise-fill:hover{
+    border-color: rgb(32, 203, 227);
+}
+
+.additional-key-chenge-mod:hover{
+    border: 2px solid rgb(220, 53, 69);
+}
+                                    /* При нажатии */
+.key:active{
+    color: white;
+    background-color: rgb(80, 80, 80);
+}
+        /* Берюзовые полые кнопки */
+.bg-white-turqoise-fill:active {
+    background-color: rgb(84, 206, 223) ;
+}
+.turquoise-border:active {
+    border-color:  rgb(255, 255, 255);
+    color: white;
+}
+        /* Красные полые кнопки */
+.bg-white-fill:active{
+    background-color: rgb(255, 140, 148);
+}
+.red-border:active{
+    border-color: rgb(247, 223, 223);
+    color: white;
+}
+        /* Красные залитые кнопки */
+.bg-red-fill:active{
+    background-color: rgb(247, 230, 231);
+}
+.border-red-fill:active{
+    border-color: rgb(233, 38, 57);
+    color: rgb(233, 38, 57);
+}
+
+/* Синяя залитая кнопка */
+.bg-blue-fill:active{
+    background-color: rgb(215, 235, 255);
+}
+.border-blue-fill:active{
+ border-color: rgb(0, 123, 255);
+ color:  rgb(26, 135, 255);
+}
+
+/* Берюзовые залитые кнопки */
+.bg-turquoise-fill:active{
+    background-color: rgb(219, 251, 255);
+}
+.border-turquoise-fill:active{
+    border-color: rgb(14, 221, 248);
+    color:  rgb(32, 203, 227);
+}
