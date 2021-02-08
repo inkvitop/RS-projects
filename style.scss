@@ -1,0 +1,54 @@
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.background {
+      height: 100vh;
+      background-image: url(/img/doroga_razmetka_vecher_oblaka_gorizont_120298_3840x2160.jpg);
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.player {
+      border: 5px solid rgba($color: #ffffff, $alpha: 0.3);
+      border-radius: 3px;
+      height: 720px;
+
+      &-video {
+            height: 100%;
+      }
+}
+
+.speed-bar {
+      height: 720px;
+      width: 90px;
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+      border: 3px solid rgba($color: #ffffff, $alpha: 0.7);
+      margin-left: 15px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+
+      &-control {
+            width: 90px;
+            height: 92px;
+            background-color: rgba($color: #ff3b3b, $alpha: 0.7);
+            pointer-events: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-text {
+                  color: white;
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                  pointer-events: none;
+            }
+      }
+}
