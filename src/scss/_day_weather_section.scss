@@ -1,0 +1,67 @@
+.day-weather-section {
+      display: flex;
+      flex-direction: row;
+      
+      &-temperature {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 10px;
+            width: 425px;
+
+            &-block {
+                  display: flex;
+                  flex-direction: row;
+            }
+
+            &-number {
+                  font-size: 200px;
+                  font-weight: 700;
+                  font-stretch: 50%;
+            }
+
+            &-degree {
+                  font-size: 100px;
+                  margin-top: 15px;
+
+                  &-value {
+                        font-size: 80px;
+                        margin-top: 20px;
+                        font-weight: 700;
+                  }
+            }
+      }
+
+      &-info {
+            width: 325px;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 37px;
+
+            &-block {
+                  height: 100px;
+                  width: 150px;
+                  &-img {
+                        height: 100%;
+                  }
+            }
+
+            
+
+            &-condition {
+                  margin-top: 10px;
+            }
+
+            &-feels {
+                  margin-top: 10px;
+            }
+
+            &-wind {
+                  margin-top: 10px;
+            }
+
+            &-humidity {
+                  margin-top: 10px;
+            }
+      }
+}

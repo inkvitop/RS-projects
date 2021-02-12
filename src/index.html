@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+            <title>Weather App</title>
+      </head>
+      <body class="body-block">
+            <main class="main-block">
+
+                  <div class="info-block">
+
+                        <div class="control-section">
+
+                              <div class="control-section-refresh-button">
+                                    <img class="control-section-refresh-button-img" src="img/icon/refresh-icon-white.png" alt="refresh icon">
+                              </div>
+
+                              <div class="control-section-language-hamburger">
+                                    <div class="control-section-language-hamburger-block">
+                                          <div class="control-section-language-hamburger-block-main">
+                                                <p class="control-section-language-hamburger-block-main-text">EN</p>
+                                                <p class="control-section-language-hamburger-block-main-arrow">&#129155;</p>
+                                          </div>
+                                          <div class="control-section-language-hamburger-block-lang">
+                                                <p class="control-section-language-hamburger-block-lang-text">EN</p>
+                                          </div>
+                                          <div class="control-section-language-hamburger-block-lang">
+                                                <p class="control-section-language-hamburger-block-lang-text">RU</p>
+                                          </div>
+                                          <div class="control-section-language-hamburger-block-lang">
+                                                <p class="control-section-language-hamburger-block-lang-text">BE</p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="control-section-temperature">
+                                    <div class="control-section-temperature-fahrenheit">&degF</div>
+                                    <div class="control-section-temperature-celsius active">&degC</div>
+                              </div>
+                        </div>
+
+                        <div class="search-section">
+                              <input class="search-section-search-input" type="search" placeholder="Search city">
+                              <div class="search-section-search-button">
+                                    <span class="search-section-search-button-text">SEARCH</span>
+                              </div>
+                              <div class="input-helper hidden">
+                              </div>
+                        </div>
+
+                        <div class="location-section">
+                              <p class="location-section-text">
+                                    <span class="location-section-city"></span>, 
+                                    <span class="location-section-country"></span>
+                              </p>
+                        </div>
+
+                        <div class="date-section">
+                              <p class="date-section-date">
+                                    <span class="date-section-date-dayText"></span> 
+                                    <span class="date-section-date-dayNumber"></span> 
+                                    <span class="date-section-date-month"></span>
+                              </p>
+                              <span class="date-section-time"></span>
+                        </div>
+
+                        <div class="day-weather-section">
+                              <div class="day-weather-section-temperature">
+                                    <div class="day-weather-section-temperature-block">
+                                          <p class="day-weather-section-temperature-number"></p>
+                                          <p class="day-weather-section-temperature-degree">&deg</p>
+                                          <p class="day-weather-section-temperature-degree-value">C</p>
+                                    </div>
+                              </div>
+                              <div class="day-weather-section-info">
+                                    <div class="day-weather-section-info-block">
+                                          <img class="day-weather-section-info-block-img" src="" alt="weather-icon">
+                                    </div>
+                                    <div class="day-weather-section-info-condition">
+                                    </div>
+                                    <div class="day-weather-section-info-feels">
+                                          <span class="day-weather-section-info-feels-heading"></span> 
+                                          <span class="day-weather-section-info-feels-temperature"></span> &deg <span class="day-weather-section-info-feels-temperature-deg">C</span>
+                                    </div>
+                                    <div class="day-weather-section-info-wind">
+                                          <span class="day-weather-section-info-wind-heading"></span> 
+                                          <span class="day-weather-section-info-wind-speed"></span> 
+                                          <span class="day-weather-section-info-wind-speed-sign"></span>
+                                    </div>
+                                    <div class="day-weather-section-info-humidity">
+                                          <span class="day-weather-section-info-humidity-heading"></span> 
+                                          <span class="day-weather-section-info-humidity-number"></span> %
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="period-weather-section">
+                              <div class="period-weather-section-1">
+                                    <div class="period-weather-section-1-block">
+                                          <div class="period-weather-section-1-block-day">
+                                                <p class="period-weather-section-1-block-day-text">TODAY</p>
+                                          </div>
+                                          <img class="period-weather-section-1-block-img" src="" alt="1-day weather icon">
+                                    </div>
+                                    <div class="period-weather-section-1-deg">
+                                          <p class="period-weather-section-1-block-temperature"></p>
+                                          <p>&deg</p>
+                                          <p class="period-weather-section-1-deg-value">C</p>
+                                          <p>
+
+                                          </p>
+                                    </div>
+                              </div>
+                              <div class="period-weather-section-2">
+                                    <div class="period-weather-section-2-block">
+                                          <div class="period-weather-section-2-block-day">
+                                                <p class="period-weather-section-2-block-day-text"></p>
+                                          </div>
+                                          <img class="period-weather-section-2-block-img" src="" alt="2-day weather icon">
+                                    </div>
+                                    <div class="period-weather-section-2-deg">
+                                          <p class="period-weather-section-2-block-temperature"></p>
+                                          <p>&deg</p>
+                                          <p class="period-weather-section-2-deg-value">C</p>
+                                          <p></p>
+                                    </div>
+                              </div>
+                              <div class="period-weather-section-3">
+                                    <div class="period-weather-section-3-block">
+                                          <div class="period-weather-section-3-block-day">
+                                                <p class="period-weather-section-3-block-day-text"></p>
+                                          </div>
+                                          <img class="period-weather-section-3-block-img" src="" alt="3-day weather icon">
+                                    </div>
+                                    <div class="period-weather-section-3-deg">
+                                          <p class="period-weather-section-3-block-temperature"></p>
+                                          <p>&deg</p>
+                                          <p class="period-weather-section-3-deg-value">C</p>
+                                          <p></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="map-block">
+                        <div class="map-section">
+                              <div id="map" class="map"></div>
+                        </div>
+                        <div class="coordinate-section">
+                              <p class="coordinate-section-latitude">
+                                    <span class="coordinate-section-latitude-lat"></span> 
+                                    <span class="coordinate-section-latitude-text"></span>
+                              </p>
+                              <p class="coordinate-section-longitude">
+                                    <span class="coordinate-section-longitude-lon"></span> 
+                                    <span class="coordinate-section-longitude-text"></span>
+                              </p>
+                        </div>
+                        <div class="server-status">
+                              <div class="server-status-IP">
+                                    <p class="server-status-IP-text">IP:</p>
+                                    <div class="server-status-IP-light"></div>
+                              </div>
+                              <div class="server-status-map-api">
+                                    <p class="server-status-map-api-text">MAP:</p>
+                                    <div class="server-status-map-api-light"></div>
+                              </div>
+                              <div class="server-status-weather-api">
+                                    <p class="server-status-weather-api-text">WEATHER:</p>
+                                    <div class="server-status-weather-api-light"></div>
+                              </div>
+                        </div>
+                  </div>
+            </main>
+
+            <img class="hiddenBg" src="img/background_img/bg1.jpg" alt="preload"> 
+            <img class="hiddenBg" src="img/background_img/bg2.jpg" alt="preload"> 
+            <img class="hiddenBg" src="img/background_img/bg3.jpg" alt="preload"> 
+            <img class="hiddenBg" src="img/background_img/bg4.jpg" alt="preload"> 
+            <img class="hiddenBg" src="img/background_img/bg5.jpg" alt="preload"> 
+            <img class="hiddenBg" src="img/background_img/bg6.jpg" alt="preload">
+            
+            <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+      </body>
+</html>

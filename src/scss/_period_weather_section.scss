@@ -1,0 +1,135 @@
+.period-weather-section {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 80px;
+      width: 750px;
+}
+
+.period-weather-section-1 {
+      width: 240px;
+      height: 160px;
+      border: 1px solid white;
+      border-radius: 8px;
+      background-color: rgba(75, 75, 75, 0.5);
+      margin-right: 10px;
+
+      &-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 3px;
+
+            &-day {
+                  display: flex;
+                  align-items: flex-end;
+            }
+            &-img {
+                  width: 65px;
+                  height: 65px;
+                  margin-right: 3px;
+            }
+      }
+      &-deg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 600;
+
+            &-value {
+                  font-size: 40px;
+                  font-weight: 700;
+                  margin-top: 4px;
+            }
+      }
+}
+.period-weather-section-1-block-temperature {
+      font-size: 80px;
+}
+
+
+.period-weather-section-2 {
+      width: 240px;
+      height: 160px;
+      border: 1px solid white;
+      border-radius: 8px;
+      background-color: rgba(75, 75, 75, 0.5);
+      margin-right: 10px;
+
+      &-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 3px;
+
+            &-day {
+                  display: flex;
+                  align-items: flex-end;
+            }
+            &-img {
+                  width: 65px;
+                  height: 65px;
+                  margin-right: 3px;
+            }
+      }
+      &-deg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 600;
+
+            &-value {
+                  font-size: 40px;
+                  font-weight: 700;
+                  margin-top: 4px;
+            }
+      }
+}
+.period-weather-section-2-block-temperature {
+      font-size: 80px;
+}
+
+
+.period-weather-section-3 {
+      width: 240px;
+      height: 160px;
+      border: 1px solid white;
+      border-radius: 8px;
+      background-color: rgba(75, 75, 75, 0.5);
+
+      &-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 3px;
+
+            &-day {
+                  display: flex;
+                  align-items: flex-end;
+            }
+            &-img {
+                  width: 65px;
+                  height: 65px;
+                  margin-right: 3px;
+            }
+      }
+      &-deg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 600;
+
+            &-value {
+                  font-size: 40px;
+                  font-weight: 700;
+                  margin-top: 4px;
+            }
+      }
+}
+.period-weather-section-3-block-temperature {
+      font-size: 80px;
+}

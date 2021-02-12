@@ -1,0 +1,131 @@
+@media(max-width: 799px) {
+      .info-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+      }
+      .location-section {
+            margin-top: 55px;
+            font-size: 35px;
+
+            &-text {
+                  text-align: center;
+            }
+      }
+      .date-section {
+            font-size: 20px;
+      }
+      .day-weather-section {
+            flex-direction: column;
+            align-items: center;
+
+            &-temperature {
+                  width: 300px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  margin-left: 0;
+
+                  &-block{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                  }
+
+                  &-number {
+                        font-size: 100px;
+                  }
+      
+                  &-degree {
+                        font-size: 50px;
+                        margin-top: 10px;
+      
+                        &-value {
+                              font-size: 40px;
+                        }
+                  }
+            }
+            &-info {
+                  width: 300px;
+                  font-size: 18px;
+      
+                  &-block {
+                        height: 100px;
+                        width: 300px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &-img {
+                              height: 100%;
+                        }
+                  }
+      
+                  
+      
+                  &-condition {
+                        text-align: center;
+                        margin-top: 5px;
+                  }
+      
+                  &-feels {
+                        text-align: center;
+                        margin-top: 5px;
+                  }
+      
+                  &-wind {
+                        text-align: center;
+                        margin-top: 5px;
+                  }
+      
+                  &-humidity {
+                        text-align: center;
+                        margin-top: 5px;
+                  }
+            }
+
+      }
+      .period-weather-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            width: 300px;
+      }
+      .period-weather-section-1 {
+            margin-right: 0;
+      }
+      .period-weather-section-2 {
+            margin-right: 0;
+            margin-top: 5px;
+      }
+      .period-weather-section-3 {
+            margin-right: 0;
+            margin-top: 5px;
+      }
+      .map-block {
+            width: 300px;
+      }
+      .map-section {
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+      }
+      .search-section {
+            top: 37px;
+            margin-left: 0;
+            width: 280px;
+
+            &-search-input {
+                  width: 200px;
+            }
+
+            &-search-button {
+                  width: 80px;
+            }
+      }
+
+}

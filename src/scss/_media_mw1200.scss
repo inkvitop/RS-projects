@@ -1,0 +1,33 @@
+@media(max-width: 1199px) {
+      .main-block {
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+      }
+      .location-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 55px;
+      }
+      .date-section {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+      }
+      .map-block {
+            position: relative;
+      }
+      .search-section {
+            top: -44px;
+            margin-left: 50%;
+
+      }     
+      .coordinate-section {
+            text-align: center;
+            margin-top: 10px;
+      }
+      .map-block {
+            margin-top: 40px;
+      }
+}
