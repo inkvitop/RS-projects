@@ -1,1 +1,1 @@
-# RS-projects
+https://inkvitop.github.io/Fancy-weather/

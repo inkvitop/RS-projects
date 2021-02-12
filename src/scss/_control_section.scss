@@ -1,0 +1,120 @@
+.control-section {
+      display: flex;
+      flex-direction: row;
+
+      &-refresh-button {
+            height: 44px;
+            width: 44px;
+            border: 1px solid white;
+            border-radius: 8px;
+            margin-right: 10px;
+            background-color: rgba(174, 181, 185, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &-img {
+                  height: 28px;
+                  width: 28px;
+            }
+      }
+
+      &-language-hamburger {
+            height: 44px;
+            width: 71px;
+            margin-right: 10px;
+            position: relative;
+            cursor: pointer;
+            z-index: 60;
+
+            &-block {
+                  height: 44px;
+                  width: 71px;
+                  border: 1px solid white;
+                  border-radius: 8px;
+                  background-color: rgba(174, 181, 185, 0.5);
+                  overflow: hidden;
+
+
+                  &-main {
+                        height: 44px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+
+                        &-text {
+                              margin-left: 10px;
+                        }
+
+                        &-arrow {
+                              margin-left: 10px;
+                        }
+                  }
+
+                  &-lang {
+                        height: 44px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border-top: 1px solid white;
+                        border-bottom: 1px solid white;
+                        background-color: rgba(19, 19, 19, 0.8);
+
+
+                        &-text {
+                              margin-left: 10px;
+                        }
+                  }
+            }
+      }
+
+      &-temperature {
+            display: flex;
+            flex-direction: row;
+
+            &-celsius {
+                  height: 44px;
+                  width: 44px;
+                  background-color: rgba(76, 82, 85, 0.4);
+                  border-top: 1px solid white;
+                  border-bottom: 1px solid white;
+                  border-right: 1px solid white;
+                  border-top-right-radius: 8px;
+                  border-bottom-right-radius: 8px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  color: rgb(180, 180, 180);
+            }
+
+            &-fahrenheit {
+                  height: 44px;
+                  width: 44px;
+                  background-color: rgba(76, 82, 85, 0.4);
+                  border-top: 1px solid white;
+                  border-left: 1px solid white;
+                  border-bottom: 1px solid white;
+                  border-top-left-radius: 8px;
+                  border-bottom-left-radius: 8px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  color: rgb(180, 180, 180);
+            }
+      }
+}
+
+.active {
+      background-color: rgba(174, 181, 185, 0.5);
+      color: white;
+}
+.open-menu {
+      height: 176px;
+}
+.rotate-arrow {
+      transform: rotate(180deg);
+}
