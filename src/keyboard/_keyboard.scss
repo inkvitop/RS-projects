@@ -1,0 +1,81 @@
+.pad{
+      width: 260px;
+      height: 420px;
+      background-color: blanchedalmond;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 3px 5px 14px 3px rgba(0,0,0,0.8);
+}
+.value{
+      height: 100px;
+      width: 240px;
+      border-top: 1px black solid;
+      border-left: 1px black solid;
+      border-right: 1px black solid;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: rgb(255, 254, 251);
+      padding-top: 20px;      
+      text-align: center;
+}
+.value-text{
+      font-size: 60px;
+      font-weight: bold;
+}
+.keyboard {
+      height: 280px;
+      width: 240px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+    "number7 number8 number9 clear"
+    "number4 number5 number6 clear"
+    "number1 number2 number3 enter"
+    "number0 negative delete enter";
+
+      :nth-child(10) {
+            border-bottom: 1px black solid;
+      }
+      
+}
+.key{
+      border-top: 1px black solid;
+      border-left: 1px black solid;
+      // border: 1px black solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 249, 227);
+      font-size: 20px;
+      font-weight: bold;
+
+      &:active {
+            background-color: brown;
+      }
+}
+      
+.number7 {  grid-area: number7; }
+.number8 {  grid-area: number8; }
+.number9 {  grid-area: number9; }
+.number4 {  grid-area: number4; }
+.number5 {  grid-area: number5; }
+.number6 {  grid-area: number6; }
+.number1 {  grid-area: number1; }
+.number2 {  grid-area: number2; }
+.number3 {  grid-area: number3; }
+.number0 {  grid-area: number0; }
+.negative { grid-area: negative; 
+            border-bottom: 1px black solid;}
+.delete {   grid-area: delete; 
+            border-bottom: 1px black solid;}
+.clear {    grid-area: clear;
+            border-right: 1px black solid; }
+.enter {    grid-area: enter; 
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;}

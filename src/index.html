@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Raindrops</title>
+</head>
+<body class="body-container">
+      <div class="main-block">
+            <div class="game-block">
+                  <div class="rock-fone">
+                        <div class="bubble-zone">
+                        </div>
+                        <div class="water-up"></div>
+                        <div class="water-down"></div>
+                  </div>
+            </div>
+            <div class="control-block">
+                  <div class="score">
+                        <img class="star-icon" src="score/score_img/star-icon.png" alt="score icon"> 
+                        <p class="score-text">Score:</p>  
+                        <span class="score-value">0</span>
+                  </div>
+                  <div class="timer-block">
+                        <div>Play time: <span class="timer">0</span> seconds!</div>
+                        
+                  </div>
+                  <div class="pad">
+                        <div class="value"><span class="value-text"></span></div>
+                        <div class="keyboard">
+                              <div class="key number number7" value="7">7</div>
+                              <div class="key number number8" value="8">8</div>
+                              <div class="key number number9" value="9">9</div>
+                              <div class="key number number4" value="4">4</div>
+                              <div class="key number number5" value="5">5</div>
+                              <div class="key number number6" value="6">6</div>
+                              <div class="key number number1" value="1">1</div>
+                              <div class="key number number2" value="2">2</div>
+                              <div class="key number number3" value="3">3</div>
+                              <div class="key number number0" value="0">0</div>
+                              <div class="key negative">-</div>
+                              <div class="key delete">Delete</div>
+                              <div class="key clear">Clear</div>
+                              <div class="key enter">Enter</div>
+                        </div>
+                  </div>
+                  <div class="advanced-statistics">
+                        <p class="statistics">Statistics:</p>
+                        <div class="lines-block">
+                              <div class="lines-names">
+                                    <div class="stat-line">Range of numbers:</div>
+                                    <div class="stat-line">Falling speed:</div>
+                                    <div class="stat-line">Used operations</div>
+                              </div>
+                              <div class="lines-variables">
+                                    <div class="stat-line"><span class="lower-number">1</span> - <span class="hi-number">5</span></div>
+                                    <div class="stat-line"><span class="falling-speed">SLOW</span></div>
+                                    <div class="stat-line"><span class="used-operations"> + - x /</span></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>   
+      </div>
+      <audio class="sound-match" src="keyboard/sounds/bubble-match2.mp3"></audio>
+      <audio class="sound-miss" src="keyboard/sounds/bubble-miss.mp3"></audio>
+      <audio class="sound-key" src="keyboard/sounds/keyclick.mp3"></audio>
+      <audio loop class="start-screen-bg-music" src="start_screen/audio/aeddda23f801f8.mp3" preload="auto"></audio>
+      <audio loop class="game-bg-music" src="start_play/audio/OxygenNotIncluded-MountingEffortstoEscape.mp3" preload="auto"></audio>
+      <audio class="wave-up" src="waterUp/audio/00199.mp3"></audio>
+</body>
+</html>
+
+

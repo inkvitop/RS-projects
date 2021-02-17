@@ -1,0 +1,24 @@
+.score{
+      background-color: rgb(179, 179, 179);
+      border: 2px solid #FFFFFF;
+      border-radius: 0px 0px 100px 100px;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      padding-left: 30px;
+      padding-top: 10px;
+}
+.star-icon{
+      height: 40px;
+      width: 40px;
+      margin-right: 5px;
+}
+.score-text{
+      font-size: 40px;
+      margin-right: 5px;
+}
+.score-value{
+      font-size: 35px;
+      color: rgb(163, 24, 24);
+      margin-top: 5px;
+}
