@@ -1,0 +1,31 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chat on socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkvitop/Chat.git"
+  },
+  "keywords": [
+    "Chat"
+  ],
+  "author": "inkvitop@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkvitop/Chat/issues"
+  },
+  "homepage": "https://github.com/inkvitop/Chat#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
