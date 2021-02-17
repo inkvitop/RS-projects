@@ -1,0 +1,64 @@
+.bubble-zone{
+      position: relative;
+      height: 750px;
+      top: -100px;
+      width: 500px;
+}
+
+.bubble{
+      border: 2px solid rgba($color: #352bff, $alpha: 0.8);
+      border-radius: 50%;
+      background-color: rgba($color: #0056c7, $alpha: 0.8);
+      height: 100px;
+      width: 100px;
+      color: white;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      top: 0px;
+      left: 0px;
+      transform: translateY(0px);
+      transition-property: transform;
+      transition-duration: 20s;
+      transition-timing-function: linear;
+}
+.gold{
+      border: 2px solid rgba($color: #968c01, $alpha: 0.8);
+      background-color: rgba($color: #fbff00, $alpha: 0.8);
+}
+.bubble-operation{
+      position: relative;
+      left: -10px;
+      text-align: center;
+}
+.numbers-contain {
+      position: relative;
+}
+.bubble-value{
+      color: rgba($color: #000000, $alpha: 0);
+      height: 1px;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+.fall{
+      transform: translateY(900px);
+}
+.fast {
+      transition-duration: 12s;
+}
+.moderately {
+      transition-duration: 16s;
+}
+
+.splash {
+     height: 250%;
+     width: 250%; 
+}
+.clearBubble {
+      border: none;
+      background: none;
+}

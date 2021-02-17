@@ -1,0 +1,51 @@
+.final-window {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      background: rgb(109,198,255);
+      background: linear-gradient(180deg, rgba(109,198,255,1) 0%, rgba(192,230,255,1) 32%, rgba(255,255,255,1) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+
+      &-contentblock {
+            height: 600px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+}
+.result-container {
+      margin-top: 40px;
+      width: 400px;
+      height: 350px;
+      border-radius: 8px;
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(86,188,255,1) 15%, rgba(56,153,255,1) 35%, rgba(27,120,255,1) 50%, rgba(56,153,255,1) 65%, rgba(86,188,255,1) 85%, rgba(255,255,255,1) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &-title {
+            color: darkred;
+            font-size: 4rem;
+            font-stretch: expanded;
+            margin-bottom: 30px;
+      }
+}
+.final-score {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+}
+.final-time {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+}

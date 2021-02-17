@@ -1,0 +1,46 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+}
+
+.body-container{
+      position: relative;
+}
+.main-block{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      border: 2px rgb(109, 93, 255) solid;
+      background-color: rgb(51, 55, 179);
+}
+
+.game-block{
+      width: 500px;
+      height: 800px;
+      background: rgb(109,198,255);
+      background: linear-gradient(180deg, rgba(109,198,255,1) 0%, rgba(192,230,255,1) 32%, rgba(255,255,255,1) 100%);
+      overflow: hidden;
+}
+
+.control-block{
+      height: 800px;
+      width: 300px;
+      background-color: rgb(230, 255, 160);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.rock-fone{
+      background-image: url(structure/img/31615-4-rock.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: 800px;
+      position: relative;
+}

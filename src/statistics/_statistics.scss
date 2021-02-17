@@ -1,0 +1,46 @@
+.timer-block{
+      margin-top: 15px;
+      height: 30px;
+      width: 260px;
+      background-color: blanchedalmond;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.timer{
+      color: rgb(163, 24, 24);
+      font-size: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+}
+.advanced-statistics{
+      margin-top: 50px;
+      width: 260px;
+      background-color: blanchedalmond;
+      border-radius: 10px;
+}
+.statistics{
+      height: 35px;
+      font-size: 25px;
+      font-weight: bold;
+}
+.lines-block{
+      display: flex;
+      justify-content: center;
+}
+.lines-names{
+      flex: 1 0 auto;
+      text-align: end;
+      margin-right: 5px;
+      font-size: 15px;
+}
+.lines-variables{
+      flex: 3 0 auto;
+      text-align: start;
+      font-size: 15px;
+      font-weight: bold;
+}
+.stat-line {
+      margin-top: 8px;
+}

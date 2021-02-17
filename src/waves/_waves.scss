@@ -1,0 +1,40 @@
+.water-up{
+      width: 2000px;
+      height: 400px;
+      z-index: 4;
+      background-image: url(waves/img/water-up.png);
+      position: relative;
+      top: -60px;
+      // transition: 6s ease;
+      transform: translateX(0px);
+}
+.water-down{
+      width: 2000px;
+      height: 400px;
+      z-index: 6;
+      background-image: url(waves/img/water-down.png);
+      position: relative;
+      top: -550px;
+      transition: 10s ease;
+      transform: translateX(0px);
+
+}
+.water-move-right{
+      transform: translateX(0px);
+}
+.water-move-left{
+      transform: translateX(-1500px);
+}
+
+.bubble-drop-first-water-up {
+      top: -150px;
+}
+.bubble-drop-second-water-up {
+      top: -250px;
+}
+.bubble-drop-first-water-down {
+      top: -600px;
+}
+.bubble-drop-second-water-down {
+      top: -680px;
+}
