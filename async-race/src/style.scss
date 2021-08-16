@@ -1,0 +1,37 @@
+@import './elements/start_screen&structure/generateStartScreen.scss';
+@import './elements/winnerScreen/generateWinnerScreen.scss';
+@import './elements/garageScreen/generateGarageScreen.scss';
+@import './elements/start_screen&structure/routingButtons/generateRoutingButtons.scss';
+
+@import './elements/winnerScreen/winnersCount/generateWinnersCount.scss';
+@import './elements/start_screen&structure/flipPage/generateFlipPage.scss';
+@import './elements/winnerScreen/winnerList/generateWinnerListWrapper.scss';
+@import './elements/winnerScreen/winnerList/winnerListButtons/generateWinnerListButtons.scss';
+@import './elements/winnerScreen/winnerList/winnerListWinners/generateWinnerListWinners.scss';
+
+@import './elements/garageScreen/carFactory/carFactory.scss';
+@import './elements/garageScreen/carTuning/tuningPlace.scss';
+@import './elements/garageScreen/carRace/carRace.scss';
+@import './elements/garageScreen/carsCount/generateCarsCountInGarage.scss';
+@import './elements/garageScreen/massButton/generateMassBtnBlock.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Yrsa', serif;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide-screen {
+  visibility: hidden;
+}

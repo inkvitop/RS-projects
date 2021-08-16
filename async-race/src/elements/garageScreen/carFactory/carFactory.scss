@@ -1,0 +1,179 @@
+.car-factory-wrapper {
+  width: 500px;
+  height: 120px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.factory {
+  &-name-input {
+    width: 490px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  &-garage-wrapper {
+    height: 80px;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    &-color {
+      height: 80px;
+      width: 80px;
+      border: 1px solid white;
+      position: relative;
+    }
+
+    &-garage {
+      position: relative;
+      height: 80px;
+      width: 300px;
+      overflow: hidden;
+      z-index: 2;
+      pointer-events: none;
+
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: invert(1);
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      &-wrapper {
+        position: absolute;
+        top: 25px;
+        left: 36px;
+        width: 76%;
+        height: 65%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+
+        & svg {
+          width: 70%;
+          height: 123%;
+          pointer-events: none;
+        }
+      }
+
+      &-door {
+        position: absolute;
+        top: 31px;
+        left: 63px;
+        width: 175px;
+        height: 46px;
+        background-color: white;
+        z-index: 3;
+        transition: 0.5s height;
+      }
+    }
+  }
+
+  &-color-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-create-btn {
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px -20px rgba(255, 255, 255, 1) inset;
+  }
+}
+
+.sprayer-wrapper {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-svg {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.close-door {
+  height: 0px;
+}
+
+.name-allert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  &-wrapper {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: red;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    &-ok {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 60px;
+      color: white;
+      font-weight: 900;
+      font-size: 2.5rem;
+      border: 1px solid red;
+      background-color: rgb(58, 38, 38);
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(90, 26, 26);
+      }
+    }
+  }
+}

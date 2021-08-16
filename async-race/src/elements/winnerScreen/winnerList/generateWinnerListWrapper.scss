@@ -1,0 +1,24 @@
+.winner-list-wrapper {
+display: flex;
+flex-direction: column;
+width: 500px;
+height: 602px;
+border: 1px solid white;
+margin-top: 40px;
+
+  &-buttons {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    border-bottom: 1px solid white;
+  }
+
+  &-winners {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+}

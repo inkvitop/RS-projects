@@ -1,0 +1,72 @@
+.mass-wrapper {
+  height: 50px;
+  width: 500px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 900;
+  font-size: 1.6rem;
+
+  &-minus {
+    height: 48px;
+    width: 70px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    &:hover {
+      background-color: rgb(24, 24, 24);
+    }
+  }
+
+  &-stop {
+    height: 48px;
+    width: 180px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+
+    &:hover {
+      background-color: rgb(24, 24, 24);
+    }
+  }
+
+  &-start {
+    height: 48px;
+    width: 180px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(153, 0, 0);
+
+    &:hover {
+      background-color: rgb(172, 32, 32);
+    }
+  }
+
+  &-plus {
+    height: 48px;
+    width: 70px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    &:hover {
+      background-color: rgb(24, 24, 24);
+    }
+  }
+}
