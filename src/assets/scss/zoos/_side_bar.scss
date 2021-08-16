@@ -1,0 +1,126 @@
+.aside-wrapper {
+   position: sticky;
+   top: 0px;
+   left: -8px;
+   z-index: 10;
+   transition: 0.3s;
+   display: flex;
+   flex-direction: column;
+}
+.hamburger {
+   position: relative;
+   height: 846px;
+   width: 212px;
+   background: #20113D;
+   display: flex;
+   flex-direction: column;
+
+   &-live {
+      height: 38px;
+      width: 112px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #F58021;
+      border-radius: 0px 0px 5px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-text {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22px;
+         display: flex;
+         align-items: center;
+         text-align: center;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         margin-right: 10px;
+      }
+
+      &-image {
+         height: 20px;
+      }
+   }
+
+   &-button {
+      height: 171px;
+      border-bottom: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-circle {
+         height: 104px;
+         width: 104px;
+         border-radius: 50%;
+         background-color: #F58021;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      &-active {
+         height: 171px;
+         border-bottom: 1px solid white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         &-ring {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            pointer-events: none;
+
+            &-circle {
+               height: 104px;
+               width: 104px;
+               border-radius: 50%;
+               background-color: white;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               pointer-events: none;
+
+               &-image {
+                  pointer-events: none;
+               }
+            }
+         }
+      }
+   }
+
+   &-open-close {
+      height: 80px;
+      width: 100%;
+      border-bottom: 1px solid white;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding-right: 30px;
+
+      &-image {
+         height: 15px;
+      }
+   }
+
+   &-scroll {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+   }
+}

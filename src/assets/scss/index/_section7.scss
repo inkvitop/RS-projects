@@ -1,0 +1,185 @@
+.section-7 {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 0;
+   // padding-left: 16px;
+
+   &-wrapper {
+      width: 1400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 136px;
+      margin-bottom: 150px;
+
+      &-title {
+         width: 655px;
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 54px;
+         line-height: 66px;
+         text-align: center;
+         text-transform: uppercase;
+         color: #00A092;
+         margin-bottom: 51px;
+      }
+
+      &-text {
+         width: 537px;
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 26px;
+         line-height: 130%;
+         text-align: center;
+         color: #20113D;
+         margin-bottom: 98px;
+      }
+
+      &-gallery {
+         height: 1356px;
+         display: flex;
+         flex-wrap: wrap;
+         margin-bottom: 100px;
+
+         &-image {
+            margin-right: 40px;
+            margin-bottom: 40px;
+         }
+
+         &-wrapper {
+           position: relative;
+            width: 440px;
+            height: 658px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+
+            &-card {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+               width: 440px;
+               height: 658px;
+               border-radius: 5px;
+               overflow: hidden;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               padding-bottom: 50px;
+               background: #20113D;
+               transition: top 0.3s, left 0.3s, height 0.3s, width 0.3s;
+
+
+               &-image {
+                 width: 100%;
+               }
+
+               &:hover {
+                top: -20px;
+                left: -20px;
+                height: 698px;
+                width: 480px;
+              }
+
+
+
+               &-text {
+                  width: 390px;
+                  height: 81px;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 18px;
+                  line-height: 150%;
+                  text-align: center;
+                  color: white;
+               }
+
+               &-button {
+                  width: 142px;
+                  height: 74px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 18px;
+                  background: none;
+                  cursor: pointer;
+                  border-radius: 5px;
+
+                  &:hover {
+                    background: #F58021;
+                  }
+
+                  &-text {
+                     font-family: Montserrat;
+                     font-style: normal;
+                     font-weight: 600;
+                     font-size: 18px;
+                     line-height: 22px;
+                     text-transform: uppercase;
+                     color: #F58021;
+                     margin-right: 10px;
+                     pointer-events: none;
+                  }
+
+                  &-images {
+                    pointer-events: none;
+                  }
+               }
+            }
+
+
+
+
+
+            &:nth-child(2) {
+               margin-right: 0;
+            }
+            &:nth-child(5) {
+               margin-right: 0;
+            }
+         }
+      }
+
+      &-button {
+         width: 359px;
+         height: 74px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: 1px solid #20113D;
+         border-radius: 5px;
+         cursor: pointer;
+         margin-bottom: 150px;
+         background: none;
+
+         &:hover {
+            background: #20113D;
+         }
+
+         &-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #20113D;
+            margin-right: 10px;
+            pointer-events: none;
+         }
+         &-image {
+            pointer-events: none;
+         }
+      }
+   }
+}
+
+.white-color {
+   color: white;
+}

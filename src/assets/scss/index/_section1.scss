@@ -1,0 +1,65 @@
+.section-1 {
+   width: 100%;
+   height: 790px;
+   display: flex;
+   justify-content: center;
+   background-image: url(/src/assets/img/images/watchFavAnimalBackground.png);
+   background-size: 97%;
+   background-position-y: -41px;
+   background-position-x: -9px;
+   background-repeat: no-repeat;
+
+   &-wrapper {
+      padding-top: 89px;
+      width: 1400px;
+      height: 940px;
+
+      &-logo {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 800;
+         font-size: 82px;
+         line-height: 100px;
+         letter-spacing: 0.01em;
+         text-transform: uppercase;
+         color: #00A092;
+         margin-bottom: 31px;
+      }
+
+      &-text {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 18px;
+         line-height: 150%;
+         color: black;
+         margin-bottom: 44px;
+      }
+
+      &-button {
+         height: 74px;
+         width: 240px;
+         background-color: #F58021;
+         border-radius: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+
+         &:hover {
+            background-color: #D26004;
+         }
+
+         &-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: white;
+            margin-right: 10px;
+         }
+      }
+   }
+}

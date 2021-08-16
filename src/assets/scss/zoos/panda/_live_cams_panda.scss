@@ -1,0 +1,212 @@
+.live {
+   width: 100%;
+   height: 1497px;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+
+   &-wrapper {
+      width: 1400px;
+      height: 1497px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+   }
+}
+
+.title-wrapper {
+   width: 1400px;
+   height: 130px;
+   display: flex;
+   align-items: center;
+   padding-bottom: 40px;
+
+   &-title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: #00A092;
+      width: 1160px;
+      padding-left: 438px;
+   }
+
+   &-button {
+      width: 240px;
+      height: 74px;
+      border-radius: 5px;
+      background: #F58021;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      cursor: pointer;
+      align-self: center;
+
+      &-text {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22px;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         margin-right: 10px;
+      }
+
+      &:hover {
+         background-color: #D26004;
+      }
+   }
+}
+
+.main-screen-wrapper {
+   position: relative;
+   width: 1400px;
+   height: 785px;
+
+   &-player {
+      width: 1400px;
+      height: 787px;
+   }
+
+   &-glass {
+      position: absolute;
+      width: 1400px;
+      height: 785px;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+   }
+
+   &-camera-name {
+      position: absolute;
+      top: 15px;
+      left: 17px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+      letter-spacing: 1.3px;
+   }
+
+   &-logo {
+      position: absolute;
+      top: 670px;
+      left: 1277px;
+   }
+}
+
+.more-cams-wrapper {
+   height: 539px;
+   width: 1400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 103px;
+
+   &-title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 29px;
+   }
+}
+
+.gallery-wrapper {
+   width: 1400px;
+   height: 209px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 120px;
+
+   &-left-button {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 13px;
+      cursor: pointer;
+      background: none;
+   }
+
+   &-gallery {
+      width: 1040px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      &-screen {
+         position: relative;
+         width: 320px;
+         height: 209px;
+         border-radius: 5px;
+         // background-color: red;
+         cursor: pointer;
+         overflow: hidden;
+
+
+         &-image {
+            width: 350px;
+            height: 215px;
+         }
+
+         &-cam-block {
+            position: absolute;
+            width: 189px;
+            height: 44px;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            border-radius: 5px 0px;
+
+            &-text {
+               font-family: Montserrat;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 26px;
+               line-height: 32px;
+               display: flex;
+               align-items: center;
+               text-align: center;
+               color: #FFFFFF;
+               margin-right: 10px;
+            }
+         }
+      }
+   }
+
+   &-right-button {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 13px;
+      cursor: pointer;
+      background: none;
+   }
+}
+
+.active-cam {
+   -webkit-box-shadow: 0px 0px 3px 3px rgba($color: #F58021, $alpha: 1.0);
+   -moz-box-shadow: 0px 0px 3px 3px rgba($color: #F58021, $alpha: 1.0);
+   box-shadow: 0px 0px 3px 3px rgba($color: #F58021, $alpha: 1.0);
+}
